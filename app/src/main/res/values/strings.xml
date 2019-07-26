@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tugas2</string>
+    <string name="keliling_belah_ketupat">Keliling Belah Ketupat</string>
+    <string name="keliling_trapesium">Keliling Trapesium</string>
+    <string name="sisi_1">Sisi 1</string>
+    <string name="sisi_2">Sisi 2</string>
+    <string name="sisi_3">Sisi 3</string>
+    <string name="sisi_4">Sisi 4</string>
+    <string name="sisi">Sisi</string>
+    <string name="rumus_keliling_belah_ketupat_sisi_4">Rumus Keliling Belah Ketupat : Sisi * 4</string>
+    <string name="rumus_keliling_trapesium_sisi1_sisi2_sisi3_sisi4">Rumus Keliling Trapesium : Sisi1 + Sisi2 + Sisi3 + Sisi4</string>
+    <string name="hasil1">Hasil1</string>
+    <string name="hasil2">Hasil2</string>
+</resources>
