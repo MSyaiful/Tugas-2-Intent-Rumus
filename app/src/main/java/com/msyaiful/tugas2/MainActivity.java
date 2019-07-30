@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    int req_code = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +33,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.kelbeke:
                 Intent intent2 = new Intent(MainActivity.this, KelilingBelahKetupat.class);
-                startActivity(intent2);
+                startActivityForResult(intent2, req_code);
                 break;
+        }
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data){
+        if (requestCode == req_code){
+            if (resultCode == RESULT_OK){
+                TextView hasilnama = findViewById(R.id.view1);
+                hasilnama.setText(data.getData().toString());
+            }
         }
     }
 }

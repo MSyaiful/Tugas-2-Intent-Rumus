@@ -11,4 +11,6 @@
     <string name="rumus_keliling_trapesium_sisi1_sisi2_sisi3_sisi4">Rumus Keliling Trapesium : Sisi1 + Sisi2 + Sisi3 + Sisi4</string>
     <string name="hasil1">Hasil1</string>
     <string name="hasil2">Hasil2</string>
+    <string name="result_data">Result Data</string>
+    <string name="view">view</string>
 </resources>

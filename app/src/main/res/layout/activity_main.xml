@@ -3,20 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/keltra"
-        android:layout_marginBottom="16dp"
-        android:text="@string/keliling_trapesium"/>
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/keliling_trapesium" />
+
+    <Button
         android:id="@+id/kelbeke"
-        android:text="@string/keliling_belah_ketupat"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/keliling_belah_ketupat" />
+
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/view" />
 
 </LinearLayout>

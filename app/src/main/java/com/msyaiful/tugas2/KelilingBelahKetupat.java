@@ -2,6 +2,8 @@ package com.msyaiful.tugas2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -38,7 +40,14 @@ public class KelilingBelahKetupat extends AppCompatActivity implements View.OnCl
             }
             if (!isInvalidInput) {
                 double kel = asisi * 4;
-                rumuskel.setText(String.valueOf(kel));
+                Intent data = new Intent();
+                EditText textnama = findViewById(R.id.sisi);
+
+                data.setData(Uri.parse(String.valueOf(kel)));
+                setResult(RESULT_OK, data);
+
+                finish();
+
             }
         }
     }
